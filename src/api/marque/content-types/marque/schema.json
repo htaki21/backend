@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "marques",
+  "info": {
+    "singularName": "marque",
+    "pluralName": "marques",
+    "displayName": "Marque"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "marque"
+    }
+  }
+}

@@ -9,9 +9,11 @@ export default ({ env }) => ({
       password: env("DATABASE_PASSWORD", "taki1234"),
       ssl: env.bool("DATABASE_SSL", false),
     },
-    debug: false,
-    schema: {
-      disableMigrations: true,
+    pool: {
+      min: 0,
+      max: 5,
     },
+    acquireConnectionTimeout: 60000,
+    debug: false,
   },
 });

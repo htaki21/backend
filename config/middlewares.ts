@@ -17,8 +17,8 @@ export default [
   {
     name: "strapi::cors",
     config: {
-      enabled: true,
       origin: [
+        "http://localhost:1337",
         "http://localhost:3000",
         "https://dev2.razzali.com",
         "https://dev3.razzali.com",
