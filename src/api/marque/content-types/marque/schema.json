@@ -4,22 +4,19 @@
   "info": {
     "singularName": "marque",
     "pluralName": "marques",
-    "displayName": "Marque"
+    "displayName": "Marque",
+    "description": "Brand information"
   },
   "options": {
     "draftAndPublish": true
   },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
+      "allowedTypes": ["images", "files", "videos", "audios"],
       "type": "media",
       "multiple": false
     },

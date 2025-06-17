@@ -4,4 +4,10 @@ export default {
     maxLimit: 100,
     withCount: true,
   },
+  responses: {
+    privateAttributes: [],
+  },
+  requests: {
+    defaultPopulate: ["marque", "category"],
+  },
 };

@@ -40,7 +40,8 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::marque.marque",
-      "inversedBy": "products"
+      "inversedBy": "products",
+      "required": false
     }
   }
 }

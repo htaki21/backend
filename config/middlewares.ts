@@ -13,6 +13,8 @@ export default [
             "blob:",
             "dl.airtable.com",
             "res.cloudinary.com",
+            "*.cloudinary.com",
+            "cloudinary.com",
           ],
           "media-src": [
             "'self'",
@@ -20,6 +22,8 @@ export default [
             "blob:",
             "dl.airtable.com",
             "res.cloudinary.com",
+            "*.cloudinary.com",
+            "cloudinary.com",
           ],
           upgradeInsecureRequests: null,
         },
