@@ -7,8 +7,20 @@ export default [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", "https://dev3.razzali.com"],
-          "media-src": ["'self'", "data:", "blob:", "https://dev3.razzali.com"],
+          "img-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "dl.airtable.com",
+            "res.cloudinary.com",
+          ],
+          "media-src": [
+            "'self'",
+            "data:",
+            "blob:",
+            "dl.airtable.com",
+            "res.cloudinary.com",
+          ],
           upgradeInsecureRequests: null,
         },
       },
