@@ -1,20 +1,13 @@
 export default ({ env }) => ({
+  // Upload provider set to "local" - new uploads will be stored locally
+  // Existing Cloudinary URLs will continue working during transition
   upload: {
     config: {
-      provider: "cloudinary",
-      providerOptions: {
-        cloud_name: env("CLOUDINARY_NAME"),
-        api_key: env("CLOUDINARY_KEY"),
-        api_secret: env("CLOUDINARY_SECRET"),
-        secure: true,
-      },
+      provider: "local",
+      sizeLimit: env.int("MAX_FILE_SIZE", 200 * 1024 * 1024), // 200MB default, configurable via env
       actionOptions: {
-        upload: {
-          folder: "strapi-uploads",
-        },
-        uploadStream: {
-          folder: "strapi-uploads",
-        },
+        upload: {},
+        uploadStream: {},
         delete: {},
       },
     },

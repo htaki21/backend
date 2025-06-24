@@ -41,7 +41,8 @@
       "relation": "manyToOne",
       "target": "api::marque.marque",
       "inversedBy": "products",
-      "required": false
+      "required": false,
+      "private": false
     }
   }
 }

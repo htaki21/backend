@@ -437,6 +437,7 @@ export interface ApiEventEvent extends Struct.CollectionTypeSchema {
 export interface ApiMarqueMarque extends Struct.CollectionTypeSchema {
   collectionName: 'marques';
   info: {
+    description: 'Brand information';
     displayName: 'Marque';
     pluralName: 'marques';
     singularName: 'marque';
@@ -455,7 +456,7 @@ export interface ApiMarqueMarque extends Struct.CollectionTypeSchema {
       'api::marque.marque'
     > &
       Schema.Attribute.Private;
-    name: Schema.Attribute.String;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
     products: Schema.Attribute.Relation<'oneToMany', 'api::product.product'>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
