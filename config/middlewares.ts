@@ -32,12 +32,10 @@ export default [
     name: "strapi::cors",
     config: {
       origin: [
-        "http://localhost:1337",
         "http://localhost:3000",
         "https://dev2.razzali.com",
-        "https://dev3.razzali.com",
-        "https://mairav.co.ma",
-        "http://ewsok8sokgg08wc8cock08w8.31.97.157.208.sslip.io",
+        "https://test.mairav.ma",
+        "https://mairav.ma",
       ],
       headers: ["*"],
       methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
